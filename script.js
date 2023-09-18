@@ -48,72 +48,72 @@ function toggleBackgroundColor() {
 
   //About image change
   if (isWhite) {
-    nightModeImg1.src = "./Images/swordsman.png";
+    nightModeImg1.src = "Images/swordsman.png";
   } else {
-    nightModeImg1.src = "./Images/swordsmanN.png";
+    nightModeImg1.src = "Images/swordsmanN.png";
   }
 
   //Projects image change
   if (isWhite) {
-    nightModeImg2.src = "./Images/project.png";
+    nightModeImg2.src = "Images/project.png";
   } else {
-    nightModeImg2.src = "./Images/projectN.png";
+    nightModeImg2.src = "Images/projectN.png";
   }
 
   //Skills image change
   if (isWhite) {
-    nightModeImg3.src = "./Images/skill.png";
+    nightModeImg3.src = "Images/skill.png";
   } else {
-    nightModeImg3.src = "./Images/skillN.png";
+    nightModeImg3.src = "Images/skillN.png";
   }
 
   //HTML icon change
   if (isWhite) {
-    nightModeImg31.src = "./Images/html.png";
+    nightModeImg31.src = "Images/html.png";
   } else {
-    nightModeImg31.src = "./Images/htmlN.png";
+    nightModeImg31.src = "Images/htmlN.png";
   }
 
   //CSS icon change
   if (isWhite) {
-    nightModeImg32.src = "./Images/css.png";
+    nightModeImg32.src = "Images/css.png";
   } else {
-    nightModeImg32.src = "./Images/cssN.png";
+    nightModeImg32.src = "Images/cssN.png";
   }
 
   //JS icon change
   if (isWhite) {
-    nightModeImg33.src = "./Images/js.png";
+    nightModeImg33.src = "Images/js.png";
   } else {
-    nightModeImg33.src = "./Images/jsN.png";
+    nightModeImg33.src = "Images/jsN.png";
   }
 
   //Contacts image change
   if (isWhite) {
-    nightModeImg4.src = "./Images/contact.png";
+    nightModeImg4.src = "Images/contact.png";
   } else {
-    nightModeImg4.src = "./Images/contactN.png";
+    nightModeImg4.src = "Images/contactN.png";
   }
 
   //GtHub image change
   if (isWhite) {
-    nightModeImg5.src = "./Images/github.png";
+    nightModeImg5.src = "Images/github.png";
   } else {
-    nightModeImg5.src = "./Images/githubN.png";
+    nightModeImg5.src = "Images/githubN.png";
   }
 
   //Linked In image change
   if (isWhite) {
-    nightModeImg6.src = "./Images/linkedin.png";
+    nightModeImg6.src = "Images/linkedin.png";
   } else {
-    nightModeImg6.src = "./Images/linkedinN.png";
+    nightModeImg6.src = "Images/linkedinN.png";
   }
 
 //Up Scroll Button image change
 if (isWhite) {
-  nightModeUpButton.src = "./Images/up.png";
+  nightModeUpButton.src = "Images/up.png";
 } else {
-  nightModeUpButton.src = "./Images/upN.png";
+  nightModeUpButton.src = "Images/upN.png";
 }
 
   isWhite = !isWhite; // Toggle the state
