@@ -41,9 +41,9 @@ function toggleBackgroundColor() {
 
   //day/night image change
   if (isWhite) {
-    nightModeNightImg.src = "./Images/night.png";
+    nightModeNightImg.src = "Images/night.png";
   } else {
-    nightModeNightImg.src = "./Images/nightN.png";
+    nightModeNightImg.src = "Images/nightN.png";
   }
 
   //About image change
