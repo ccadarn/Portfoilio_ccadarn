@@ -3,45 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
     <title>My Portfolio</title>
 </head>
-<body>
+<body id="body">
     <header>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <nav class="nav">
+            <div class="logoContainer"> <!--Logo imsgr + Heaaading Container-->
+                <img class="logo" alt="logo image" src="./Images/ccadarn.jpg"><h1>ccadarn</h1>
+            </div>
+            <div>
+                <ul class="ul"> <!--Navigation-->
+                    <li class="li"><a href="#about">About Me</a></li>
+                    <li class="li"><a href="#projects">Projects</a></li>
+                    <li class="li"><a href="#skills">Skills</a></li>
+                    <li class="li"><a href="#contact">Contact</a></li>
+                </ul>
+                <!--Night/Day Button-->
+                <img class="nightButton" id="nightimg" alt="nightmode button" src="./Images/night.png" onclick="toggleBackgroundColor()">
+            </div>
         </nav>
     </header>
 
+    <hr>
+
     <main>
-        <section id="projects" class="section">
-            <h2>Projects</h2>
-            <!-- Add your projects here -->
+        <section>
+                <div id="about"> <!--About Section-->
+                    <div class="inline-container">
+                        <img class="headingImages" id="img1" alt="heading icon" src="./Images/swordsman.png">
+                        <h2>About Me</h2>
+                    </div>
+                    <p>Greetings! My name is <strong>Arlen</strong>, an enthusiastic student on the path to becoming a full-stack developer.
+                    Currently, I'm in the early stages of my coding journey, eagerly soaking up knowledge and honing my skills.
+                    <br>
+                    <br>        
+                    While I may not have professional experience just yet, my dedication to learning and growing in the field of web development is unwavering. 
+                    I'm driven by a deep-seated passion for technology and a desire to craft digital experiences that captivate and engage users.
+                    <br>
+                    <br>
+                    In my portfolio, you'll find a collection of projects that mark my progress as I traverse the exciting world of coding. 
+                    Each project represents a milestone in my educational journey, allowing me to explore both front-end and back-end development.
+                    <br>
+                    <br>
+                    I'm actively seeking opportunities to collaborate and learn from experienced developers who share my passion for innovation. 
+                    Together, we can transform ideas into functional websites and applications that leave a lasting impact.
+                    <br>
+                    <br>
+                    As I continue my studies and work towards becoming a proficient full-stack developer, I invite you to join me on this adventure. 
+                    Together, we can shape the future of technology, one line of code at a time.
+                    <br>
+                    <br>
+                    Currently I am studying on <a href="https://www.codecademy.com/">Codecademy</a>
+                    </p>
+                </div>
+
         </section>
 
-        <section id="about" class="section">
-            <h2>About Me</h2>
-            <!-- Add information about yourself here -->
+        <hr>
+
+        <section>
+         
+                <div id="projects"> <!--Project Section-->
+                
+                    <div class="inline-container">
+                        <img class="headingImages" id="img2" alt="heading icon" src="./Images/project.png">
+                        <h2>Projects</h2>
+                    </div>
+                    <p><span class="mtgmarket"><a href="https://www.mtgmarket.com.ua" target="_blank">www.mtgmarket.com.ua</a><span></span> - my first try in web development. 
+                        <br>
+                        Even though this ecommerce website was developed using WordPress and other already available tools and has minimal intrusions to HTML and CSS code from myself,
+                        it was a great experience that led me to consider the profession of full stack developer</p>
+
+                    <h3>Codecademy projects/assignments</h3>
+                    <ul>
+                        <li><a href="https://ccadarn.github.io/website-style-guide/" target="_blank">My website style guide</a></li>
+                        <li><a href="https://ccadarn.github.io/css_ref_table_project.github.io/" target="_blank">Cheatsheats Assignment</a></li>
+                        <li><a href="https://ccadarn.github.io/The-Tea-Cozy-Codecademy-project/" target="_blank">Tea Cozy Project</a></li>
+                        <li><a href="https://ccadarn.github.io/Food_Idea_Club_Codecademy/" target="_blank">Food Idea Club Project</a></li>
+                        <li><a href="https://ccadarn.github.io/Designcraft-Studios-Project-Codecademy/" target="_blank">Designcraft Studios Project</a></li>
+                    </ul>
+                </div>
+
         </section>
 
-        <section id="skills" class="section">
-            <h2>Skills</h2>
-            <!-- Add your skills here -->
+        <hr>
+
+        <section>
+
+                <div id="skills"> <!--Skills Section-->
+                    <div class="inline-container">
+                        <img class="headingImages" id="img3" alt="heading icon" src="./Images/skill.png">
+                        <h2>Skills</h2>
+                    </div>
+                    <h3>Basic Skills</h3>
+                    <img class="icon" id="img31" alt="HTML icon" src="./Images/html.png"> HTML Course (<a href="https://www.codecademy.com/" target="_blank">Codecademy</a>)
+                    <br>
+                    <img class="icon" id="img32" alt="CSS icon" src="./Images/css.png"> CSS Course (<a href="https://www.codecademy.com/" target="_blank">Codecademy</a>)
+                    <br>
+                    <img class="icon" id="img33" alt="Java Script icon" src="./Images/js.png"> Java Script Course (<a href="https://www.codecademy.com/" target="_blank">Codecademy</a>)
+                </div>
+
         </section>
 
-        <section id="contact" class="section">
-            <h2>Contact</h2>
-            <!-- Add contact information or a form here -->
+        <hr>
+
+        <section> <!--Contact section-->
+                
+                <div id="contact">
+                    <div class="inline-container">
+                        <img class="headingImages" id="img4" alt="heading icon" src="./Images/contact.png">
+                        <h2>Contacts</h2>
+                      </div>
+                      <br>
+                    <a href="https://github.com/ccadarn" target="_blank"><img class="gitHub" id="img5" alt="GitHub Icon" src="./Images/github.png"></a> 
+                    <a href="https://www.linkedin.com/in/arlen-myemyetov-5743a3281/" target="_blank"><img class="linkedin" id="img6" alt="Linked In Icon" src="./Images/linkedin.png"></a> 
+                </div>
+
         </section>
+
+        <!-----Up scroll button --------->
+        <div id="scrollToTop">
+            <img src="./Images/up.png" alt="Scroll to Top" id="upButton">
+        </div>
+
     </main>
 
-    <footer>
+    <hr>
+
+    <footer class="footer">
         <p>&copy; 2023 My Portfolio</p>
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>

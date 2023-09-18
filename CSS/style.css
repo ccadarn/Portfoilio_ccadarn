@@ -1,57 +1,112 @@
-/* Reset some default styles */
-body, h1, h2, h3, p, ul, li {
+body {
+    font-size: 16px;
+    padding: 10px;
+}
+
+
+.ul {
+    list-style: none; /* Remove bullet points */
+    display: inline;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove any default padding as well if needed */
+
+}
+
+.li {
+    display: inline; /* Display list items inline */
+    margin-right: 5px;
+  
+}
+
+section {
+    display: flex;
+    justify-items: center;
+    flex-wrap: nowrap;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-}
-
-header {
-    background-color: #491212;
-    padding: 10px 0;
-}
-
-.navbar ul {
-    list-style: none;
-    text-align: center;
-}
-
-.navbar li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-}
-
-main {
+@media (max-width: 470px) {
+  .nav {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     align-items: center;
-    padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;  
+  }
 }
 
-.section {
-    flex: 1;
-    max-width: 400px;
-    text-align: center;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px;
+.logoContainer {
+  display: inline-flex;
+  margin: 5px;
+  justify-content: space-between;
+  flex-wrap: nowrap;
 }
 
-footer {
+
+.icon {
+    width: 5%;
+    height: auto;
+    margin-right: 10px;
+}
+
+.gitHub, .linkedin {
+    min-width: 30px;
+    max-width: 50px;
+    height: auto;
+    padding-left: 10px;
+}
+
+.headingImages {
+    width: 8%;
+    min-width: 25px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.inline-container {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+  }
+
+  .nightButton {
+    width: 20px;
+    height: auto;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .logo {
+    border-radius: 50%;
+    height: 50px;
+    width: auto;
+    margin: 10px;
+    border: 1px solid white;
+  }
+
+  footer {
     text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+  }
+
+/* Scroll-to-top button styles */
+#scrollToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+#upButton {
+  width: 40px;
+  height: 40px;
 }
